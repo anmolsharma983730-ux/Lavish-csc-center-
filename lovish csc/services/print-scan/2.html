@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="hi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Colour Print | Lavish CSC Center</title><link rel="stylesheet" href="../../css/style.css"></head><body>
+<header>
+  <a class="logo" href="../../index.html">💻 Lavish CSC Center</a>
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../about.html">About Us</a>
+    <a href="../../services.html">Services</a>
+    <a href="../../contact.html">Contact</a>
+    <button class="lang-btn" onclick="toggleLanguage()">English</button>
+  </nav>
+</header><section class="page-hero"><h1>🖨️ Colour Print</h1><p>Print & Scan service assistance</p></section>
+<section><div class="detail"><h2>Colour Print</h2><p>Lavish CSC Center में <b>Colour Print</b> से संबंधित ऑनलाइन सहायता उपलब्ध है।</p>
+<h2>हमारी सहायता</h2><ul><li>Online application/form filling assistance</li><li>Document preparation and upload guidance</li><li>Application submission guidance</li><li>Status/next-step guidance</li></ul>
+<h2>संपर्क करें</h2><p>वर्तमान आवश्यक दस्तावेज़ और प्रक्रिया जानने के लिए center से संपर्क करें।</p>
+<div class="cta"><a class="btn whatsapp" href="https://wa.me/917818832237" target="_blank">💬 WhatsApp Now</a><a class="btn call" href="tel:7818832237">📞 Call Now</a><a class="btn call" href="../print-scan.html">← Back</a></div></div></section><footer><p>© <span id="year"></span> Lavish CSC Center, Kakrala</p><p>All Rights Reserved.</p></footer>
+<a class="float-whatsapp" href="https://wa.me/917818832237" target="_blank" title="WhatsApp">💬</a>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+function toggleLanguage(){
+  const b=document.querySelector(".lang-btn");
+  if(b.textContent==="English"){
+    b.textContent="हिंदी";
+    document.querySelectorAll("[data-hi]").forEach(e=>e.textContent=e.dataset.hi);
+  }else{
+    b.textContent="English";
+    document.querySelectorAll("[data-en]").forEach(e=>e.textContent=e.dataset.en);
+  }
+}
+</script></body></html>
